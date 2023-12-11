@@ -6,21 +6,25 @@ export const center = style({
   alignContent: "center",
 });
 
-export const buttonBase = style({
+export const buttonContainer = style({
   display: "flex",
   justifyContent: "center",
   alignContent: "center",
   minWidth: "max-content",
 });
 
+export const buttonBase = style({
+  border: "0px",
+});
+
 export const buttonSize = styleVariants({
-  small: { padding: "1.1rem 1.2rem", height: "3.2rem", minWidth: "8.6rem" },
-  middle: { height: "4.8rem", minWidth: "8.6rem" },
-  large: { width: "100%" },
+  small: [buttonBase, { padding: "1.1rem 1.2rem", height: "3.2rem", minWidth: "8.6rem" }],
+  middle: [buttonBase, { height: "4.8rem", minWidth: "28.8rem" }],
+  large: [buttonBase, { width: "100%", minWidth: "34rem" }],
 });
 
 export const buttonType = styleVariants({
-  free: { borderRadius: "50%", height: "5.2rem" },
+  free: { borderRadius: "4rem", height: "5.2rem" },
   bottom: { position: "absolute", bottom: "0", height: "7.5rem" },
 });
 

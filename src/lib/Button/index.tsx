@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { buttonBase, buttonColor, buttonSize, buttonType } from "./style.css";
+import { buttonColor, buttonContainer, buttonSize, buttonType } from "./style.css";
 
 interface ButtonProps {
   children: ReactNode;
@@ -13,11 +13,13 @@ export default function Button(props: ButtonProps) {
   const { size = "large", type = "free", color = "purple", disabled, children, ...restProps } = props;
 
   return (
-    <button
-      type="button"
-      className={`${buttonBase} ${buttonSize[size]} ${buttonType[type]} ${buttonColor[color]}`}
-      disabled={disabled}>
-      {children}
-    </button>
+    <div className={buttonContainer}>
+      <button
+        type="button"
+        className={`${buttonSize[size]} ${buttonType[type]} ${buttonColor[color]}`}
+        disabled={disabled}>
+        {children}
+      </button>
+    </div>
   );
 }
