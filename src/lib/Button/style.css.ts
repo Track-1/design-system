@@ -15,6 +15,12 @@ export const buttonContainer = style({
 
 export const buttonBase = style({
   border: "0px",
+  fontFamily: "Alexandria",
+  fontSize: "1.6rem",
+  fontStyle: "normal",
+  fontWeight: "400",
+  lineHeight: "normal",
+  letterSpacing: "-0.016rem",
 });
 
 export const buttonSize = styleVariants({
@@ -28,9 +34,15 @@ export const buttonType = styleVariants({
   bottom: { position: "absolute", bottom: "0", height: "7.5rem" },
 });
 
+export const buttonBackgroundColor = styleVariants({
+  purple: { backgroundColor: "#5200FF" },
+  pink: { backgroundColor: "#E965FF" },
+  green: { backgroundColor: "#43FF8E" },
+  grey: { backgroundColor: "#1E2025" },
+});
+
 export const buttonColor = styleVariants({
-  purple: { backgroundColor: "#5200FF", color: "white" },
-  pink: { backgroundColor: "#E965FF", color: "#0D0E11" },
-  green: { backgroundColor: "#43FF8E", color: "#0D0E11" },
-  grey: { backgroundColor: "#1E2025", color: "#9EA1AB" },
+  white: { color: "white" },
+  black: { color: "#0D0E11" },
+  grey: { color: "#9EA1AB" },
 });

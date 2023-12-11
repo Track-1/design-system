@@ -4,7 +4,8 @@ import Button from ".";
 interface ButtonOwnProps {
   size?: "small" | "middle" | "large";
   type?: "free" | "bottom";
-  color?: "purple" | "pink" | "green" | "grey";
+  backgroundColor?: "purple" | "pink" | "green" | "grey";
+  color?: "white" | "black" | "grey";
   disabled?: boolean;
 }
 
@@ -36,7 +37,8 @@ export const Free: StoryObj<ButtonStoryProps> = {
   args: {
     children: "Free Button",
     size: "large",
-    color: "green",
+    backgroundColor: "green",
+    color: "black",
     disabled: false,
   },
 };
@@ -46,7 +48,8 @@ export const Bottom: StoryObj<ButtonStoryProps> = {
   args: {
     children: "Bottom Button",
     type: "bottom",
-    color: "green",
+    backgroundColor: "green",
+    color: "black",
     disabled: false,
   },
 };
