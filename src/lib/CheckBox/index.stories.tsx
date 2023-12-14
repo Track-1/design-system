@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
+import { useState } from "react";
 import CheckBox from ".";
 
 const meta = {
@@ -20,4 +21,13 @@ export const Default: Story = {
   args: {
     checked: true,
   },
+};
+
+export const Basic: StoryObj = {
+  render: function Render() {
+    const [checked, onChange] = useState<boolean>(false);
+    return <CheckBox checked={checked} onChange={(e) => onChange(e.target.checked)} />;
+  },
+
+  name: "checkbox",
 };
