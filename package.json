@@ -1,15 +1,27 @@
 {
-  "name": "design-system",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@track-1/design-system",
+  "private": false,
+  "main": "dist/index.js",
+  "version": "0.0.1",
+  "types": "dist/index.d.ts",
+  "browser": "./browser/specific/main.js",
   "type": "module",
+  "description": "track-1의 디자인 시스템 라이브러리",
+  "author": {
+    "name": "seojisoo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Track-1/design-system"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "prepare": "rm -rf dist && mkdir dist && tsc"
   },
   "dependencies": {
     "@vanilla-extract/vite-plugin": "^3.9.2",
