@@ -1,10 +1,12 @@
 {
   "name": "track-1-design-system",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
-  "main": "./dist/index.js",
-  "module": "./dist/index.d.ts",
-  "types": "./dist/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "browser": "./browser/specific/main.js",
   "type": "module",
   "description": "track-1의 디자인 시스템 라이브러리",
