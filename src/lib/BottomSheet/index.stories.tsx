@@ -1,7 +1,7 @@
 import { Meta } from "@storybook/react";
 
 import { useState } from "react";
-import { BottomSheet } from ".";
+import BottomSheet from ".";
 
 export default {
   component: BottomSheet,

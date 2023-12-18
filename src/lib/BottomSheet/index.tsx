@@ -7,7 +7,7 @@ export interface BottomSheetProps extends PropsWithChildren<ComponentProps<typeo
   onClose: () => void;
 }
 
-export const BottomSheet: FC<BottomSheetProps> = (props) => {
+const BottomSheet: FC<BottomSheetProps> = (props) => {
   const { header, children, isOpen, onClose, ...restProps } = props;
 
   return (
@@ -23,3 +23,5 @@ export const BottomSheet: FC<BottomSheetProps> = (props) => {
     </Sheet>
   );
 };
+
+export default BottomSheet;
