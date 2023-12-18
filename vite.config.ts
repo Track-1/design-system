@@ -4,15 +4,13 @@ import { defineConfig } from "vite";
 import svgr from "vite-plugin-svgr";
 import tsconfigPaths from "vite-tsconfig-paths";
 
-import * as path from "path";
-
 // https://vitejs.dev/config/
 export default defineConfig({
   build: {
     lib: {
-      entry: path.resolve(__dirname, "src/lib/index.tsx"),
-      name: "index",
-      fileName: "index",
+      entry: "src/lib/index.tsx",
+      name: "track-1-design-system",
+      formats: ["es"],
     },
     rollupOptions: {
       external: ["react"],

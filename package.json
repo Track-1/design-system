@@ -1,5 +1,5 @@
 {
-  "name": "@track-1/design-system",
+  "name": "track-1-design-system",
   "version": "0.0.1",
   "license": "MIT",
   "main": "dist/index.umd.cjs",
