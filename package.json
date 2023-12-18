@@ -1,9 +1,9 @@
 {
   "name": "track-1-design-system",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
-  "main": "dist/index.umd.cjs",
-  "module": "dist/index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.d.ts",
   "types": "./dist/index.d.ts",
   "browser": "./browser/specific/main.js",
   "type": "module",
