@@ -9,6 +9,15 @@
   "browser": "./browser/specific/main.js",
   "type": "module",
   "description": "track-1의 디자인 시스템 라이브러리",
+  "keywords": [
+    "react",
+    "component",
+    "track-1",
+    "bottome-sheet",
+    "cover",
+    "button",
+    "check-box"
+  ],
   "author": {
     "name": "seojisoo"
   },

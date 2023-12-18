@@ -4,8 +4,28 @@ import { defineConfig } from "vite";
 import svgr from "vite-plugin-svgr";
 import tsconfigPaths from "vite-tsconfig-paths";
 
+import * as path from "path";
+
 // https://vitejs.dev/config/
 export default defineConfig({
+  build: {
+    lib: {
+      entry: path.resolve(__dirname, "src/lib/index.tsx"),
+      name: "index",
+      fileName: "index",
+    },
+    rollupOptions: {
+      external: ["react"],
+      output: {
+        globals: {
+          react: "React",
+        },
+      },
+    },
+    commonjsOptions: {
+      esmExternals: ["react"],
+    },
+  },
   plugins: [
     tsconfigPaths(),
     react(),
@@ -16,7 +36,7 @@ export default defineConfig({
     }),
     vanillaExtractPlugin({
       // configuration
-    })
+    }),
   ],
   optimizeDeps: {
     exclude: ["js-big-decimal"],
