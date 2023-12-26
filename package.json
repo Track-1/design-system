@@ -1,6 +1,6 @@
 {
   "name": "track-1-design-system",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -37,6 +37,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-modal-sheet": "^2.2.0",
+    "vite-plugin-babel": "^1.2.0",
     "vite-plugin-svgr": "^4.2.0",
     "vite-tsconfig-paths": "^4.2.1"
   },
@@ -61,5 +62,11 @@
     "storybook": "^7.6.3",
     "typescript": "^5.2.2",
     "vite": "^5.0.0"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/your-library.cjs.js",
+      "import": "./dist/your-library.esm.js"
+    }
   }
 }
