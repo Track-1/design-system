@@ -1,6 +1,6 @@
 {
   "name": "track-1-design-system",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -65,8 +65,8 @@
   },
   "exports": {
     ".": {
-      "require": "./dist/your-library.cjs.js",
-      "import": "./dist/your-library.esm.js"
+      "require": "./dist/track-1-design-system.cjs.js",
+      "import": "./dist/track-1-design-system.esm.js"
     }
   }
 }
