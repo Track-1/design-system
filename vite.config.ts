@@ -11,7 +11,7 @@ export default defineConfig({
     lib: {
       entry: "src/lib/index.tsx",
       name: "track-1-design-system",
-      formats: ["es"],
+      formats: ["es", "cjs"],
     },
     rollupOptions: {
       external: ["react"],
