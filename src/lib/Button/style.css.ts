@@ -31,7 +31,7 @@ export const buttonSize = styleVariants({
 
 export const buttonType = styleVariants({
   free: { borderRadius: "4rem", height: "5.2rem" },
-  bottom: { position: "absolute", bottom: "0", height: "7.5rem" },
+  bottom: { position: "fixed", bottom: "0", height: "7.5rem" },
 });
 
 export const buttonBackgroundColor = styleVariants({

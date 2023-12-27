@@ -86,6 +86,7 @@ yarn add track-1-design-system
      backgroundColor?: "purple" | "pink" | "green" | "grey";
      color?: "white" | "black" | "grey";
      disabled?: boolean;
+     onClick?: () => void;
    }
    ```
 
