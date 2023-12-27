@@ -8,6 +8,7 @@ interface ButtonProps {
   backgroundColor?: "purple" | "pink" | "green" | "grey";
   color?: "white" | "black" | "grey";
   disabled?: boolean;
+  onClick?:()=>void;
 }
 
 export default function Button(props: ButtonProps) {
@@ -18,11 +19,12 @@ export default function Button(props: ButtonProps) {
     color = "white",
     disabled,
     children,
+    onClick
     ...restProps
   } = props;
 
   return (
-    <div className={buttonContainer}>
+    <div className={buttonContainer} onClick={onClick}>
       <button
         type="button"
         className={`${buttonSize[size]} ${buttonType[type]} ${buttonBackgroundColor[backgroundColor]} ${buttonColor[color]}`}
