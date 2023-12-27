@@ -8,7 +8,7 @@ interface ButtonProps {
   backgroundColor?: "purple" | "pink" | "green" | "grey";
   color?: "white" | "black" | "grey";
   disabled?: boolean;
-  onClick?:()=>void;
+  onClick?: () => void;
 }
 
 export default function Button(props: ButtonProps) {
@@ -19,7 +19,7 @@ export default function Button(props: ButtonProps) {
     color = "white",
     disabled,
     children,
-    onClick
+    onClick,
     ...restProps
   } = props;
 
