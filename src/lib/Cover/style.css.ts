@@ -5,8 +5,6 @@ export const coverBox = style({
   justifyContent: "center",
   alignItems: "center",
   overflow: "hidden",
-
-  position: "absolute",
 });
 
 export const coverContainer = styleVariants({
@@ -27,8 +25,6 @@ export const windowShadow = style({
 export const image = style({
   width: "100%",
   height: "100%",
-
-  position: "absolute",
 
   objectFit: "cover",
   margin: "auto",
