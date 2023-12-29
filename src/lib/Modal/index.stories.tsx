@@ -1,7 +1,7 @@
 import { Meta } from "@storybook/react";
 
 import { useState } from "react";
-import { Modal } from ".";
+import Modal from ".";
 
 export default {
   component: Modal,
