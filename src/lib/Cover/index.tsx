@@ -36,7 +36,7 @@ export default function Cover(props: CoverProps) {
           type="button"
           onClick={onPlay}
           className={`${coverAlignBase} ${coverAlign[align]} ${shape === "window" && windowPadding}`}
-          style={{ width: `${width}rem`, height: `${height}rem` }}>
+          style={{ width: `${width}rem`, height: `${height}rem`, position: "absolute" }}>
           {isPlay ? (
             <PauseIcon className={`${width == 4 ? buttonSize["small"] : buttonSize["large"]}`} />
           ) : (

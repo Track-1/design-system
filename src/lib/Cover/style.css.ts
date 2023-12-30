@@ -52,8 +52,8 @@ export const coverAlignBase = style({
 });
 
 export const coverAlign = styleVariants({
-  center: { justifyContent: "center", alignItems: "center", position: "absolute" },
-  rightBottom: { justifyContent: "flex-end", alignItems: "flex-end", padding: "1rem", position: "absolute" },
+  center: { justifyContent: "center", alignItems: "center" },
+  rightBottom: { justifyContent: "flex-end", alignItems: "flex-end", padding: "1rem" },
 });
 
 export const windowPadding = style({
